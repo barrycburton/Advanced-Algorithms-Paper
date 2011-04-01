@@ -1,0 +1,17 @@
+\usepackage{611}
+
+\newcommand\lecture[1]{\def\@lecture{Lecture #1}}
+\newcommand\lectures[2]{\def\@lecture{Lectures #1--#2}}
+\newcommand\lecturer[1]{\def\@lecturer{#1}}
+
+\lecturer{Andrew Myers}
+
+\renewcommand\maketitle{
+\begin{flushleft}
+{\large
+\textsf{CS611 \@lecture \hfill \@title \hfill \@date}}\\
+\textsf{Scribe: \@author}\hfill\textsf{Lecturer: \@lecturer}\\
+\hrulefill
+\end{flushleft}}
+
+\def\ttquot@ttfont{\sf}
